@@ -16,7 +16,21 @@
   <nav class="nav" id="nav">
     <div class="nav-inner">
       <div class="nav-logo">
-        <span class="logo-dot"></span>
+        <svg class="arc-logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Arc Logo">
+          <defs>
+            <linearGradient id="arcGradNav" x1="20" y1="10" x2="80" y2="90" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#d0d8e8"/>
+              <stop offset="50%" stop-color="#ffffff"/>
+              <stop offset="100%" stop-color="#8fa8c8"/>
+            </linearGradient>
+          </defs>
+          <!-- Outer arch -->
+          <path d="M10 85 Q10 15 50 15 Q90 15 90 85" stroke="url(#arcGradNav)" stroke-width="13" fill="none" stroke-linecap="round"/>
+          <!-- Inner cutout arch (dark) to make hollow look -->
+          <path d="M25 85 Q25 32 50 32 Q75 32 75 85" stroke="#0a1628" stroke-width="10" fill="none" stroke-linecap="round"/>
+          <!-- Small inner arc notch at bottom left -->
+          <path d="M25 85 Q30 68 42 62" stroke="url(#arcGradNav)" stroke-width="5" fill="none" stroke-linecap="round"/>
+        </svg>
         <span class="logo-text">Arc</span>
       </div>
       <a href="https://community.arc.network" target="_blank" class="nav-cta">Explore Testnet</a>
@@ -228,7 +242,18 @@
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-logo">
-        <span class="logo-dot"></span>
+        <svg class="arc-logo-svg" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Arc Logo">
+          <defs>
+            <linearGradient id="arcGradFoot" x1="20" y1="10" x2="80" y2="90" gradientUnits="userSpaceOnUse">
+              <stop offset="0%" stop-color="#d0d8e8"/>
+              <stop offset="50%" stop-color="#ffffff"/>
+              <stop offset="100%" stop-color="#8fa8c8"/>
+            </linearGradient>
+          </defs>
+          <path d="M10 85 Q10 15 50 15 Q90 15 90 85" stroke="url(#arcGradFoot)" stroke-width="13" fill="none" stroke-linecap="round"/>
+          <path d="M25 85 Q25 32 50 32 Q75 32 75 85" stroke="#0a1628" stroke-width="10" fill="none" stroke-linecap="round"/>
+          <path d="M25 85 Q30 68 42 62" stroke="url(#arcGradFoot)" stroke-width="5" fill="none" stroke-linecap="round"/>
+        </svg>
         <span class="logo-text">Arc — Simply Explained</span>
       </div>
       <div class="footer-credit">

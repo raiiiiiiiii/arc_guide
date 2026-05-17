@@ -69,13 +69,16 @@ body {
   text-decoration: none;
 }
 
-.logo-dot {
-  width: 10px;
-  height: 10px;
-  background: var(--arc);
-  border-radius: 50%;
-  display: inline-block;
-  box-shadow: 0 0 0 3px var(--arc-light);
+.arc-logo-svg {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+  filter: drop-shadow(0 1px 3px rgba(91,141,239,0.25));
+  transition: transform 0.3s ease;
+}
+
+.nav-logo:hover .arc-logo-svg {
+  transform: scale(1.08) rotate(-3deg);
 }
 
 .nav-cta {
@@ -598,6 +601,20 @@ body {
 
 .footer .nav-logo {
   color: var(--white);
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 1rem;
+  color: var(--white);
+  letter-spacing: -0.02em;
+}
+
+.footer-logo .arc-logo-svg {
+  filter: drop-shadow(0 0 6px rgba(255,255,255,0.2));
 }
 
 .footer-credit {
