@@ -489,7 +489,7 @@ body {
 
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 2px;
   background: var(--gray-200);
   border-radius: var(--radius);
@@ -498,7 +498,7 @@ body {
 }
 
 .stat-card {
-  padding: 48px 36px;
+  padding: 40px 16px;
   background: var(--gray-100);
   text-align: center;
   transition: var(--transition);
@@ -509,12 +509,13 @@ body {
 }
 
 .stat-number {
-  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
   font-weight: 900;
   letter-spacing: -0.04em;
   color: var(--arc);
   line-height: 1;
   margin-bottom: 10px;
+  white-space: nowrap;
 }
 
 .stat-label {
@@ -586,12 +587,13 @@ body {
 
 /* ===================== STAT STATIC (no animation) ===================== */
 .stat-number-static {
-  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
   font-weight: 900;
   letter-spacing: -0.04em;
   color: var(--arc);
   line-height: 1;
   margin-bottom: 10px;
+  white-space: nowrap;
 }
 
 /* ===================== ROADMAP / TIMELINE ===================== */
