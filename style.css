@@ -727,9 +727,9 @@ body {
 
 /* ===================== FOOTER ===================== */
 .footer {
-  background: var(--black);
+  background: var(--gray-50);
   padding: 48px 24px;
-  border-top: 1px solid rgba(255,255,255,0.06);
+  border-top: 1px solid var(--gray-200);
 }
 
 .footer-inner {
@@ -741,7 +741,7 @@ body {
 }
 
 .footer .nav-logo {
-  color: var(--white);
+  color: var(--black);
 }
 
 .footer-logo {
@@ -750,16 +750,16 @@ body {
   gap: 10px;
   font-weight: 800;
   font-size: 1rem;
-  color: var(--white);
+  color: var(--black);
   letter-spacing: -0.02em;
 }
 
 .footer-logo .arc-logo-svg {
-  filter: drop-shadow(0 0 6px rgba(255,255,255,0.2));
+  filter: drop-shadow(0 0 6px var(--arc-light));
 }
 
 .footer-credit {
-  color: rgba(255,255,255,0.5);
+  color: var(--gray-400);
   font-size: 0.9rem;
 }
 
@@ -774,7 +774,7 @@ body {
 }
 
 .footer-disclaimer {
-  color: rgba(255,255,255,0.25);
+  color: var(--gray-600);
   font-size: 0.78rem;
   letter-spacing: 0.02em;
 }
